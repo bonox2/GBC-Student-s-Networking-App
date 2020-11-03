@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GBC Student's Networking App</title>
 </head>
 <body>
     <div class="networking_app">
-        <div class="app-title"></div>
+        <div class="app-title">GBC Student's Networking App</div>
         <div class="container">
-          <div class="app-section">
-              <div class="name-paragraph">1. Career Launge</div>
-              <div class="sub-name-paragraph">1.1 Personality and Career Choise</div>
+          <div class="app-main">
+            <div class="app-section">
+                <div class="name-paragraph">1. Career Launge</div>
+                <div class="sub-name-paragraph">1.1 Personality and Career Choise</div>
                 <div class="info-section">1.1.1 Career for students width disabilities</div>
                 <div class="info-section">1.1.2 Career Counselling</div>
                 <div class="info-section">1.1.3 Job Search Support</div>
-              <div class="sub-name-paragraph">1.2 Interactive Platform</div>
+                <div class="sub-name-paragraph">1.2 Interactive Platform</div>
                 <div class="info-section">1.2.1 Tests for future career</div>
                 <div class="info-section">1.2.2 Interactive game</div>
+            </div>
+            <div class="app-section">
+              <div class="name-paragraph">2. Study Lounge</div>
+              <div class="sub-name-paragraph">2.1 Carer Peer Education</div>
+              <div class="info-section">2.1.1 Study center with Tuturing</div>
+              <div class="info-section">2.1.2 Employer Recruitment Online Session</div>
+              <div class="info-section">2.1.3 VirTual Career Fair</div>
+              <div class="sub-name-paragraph">2.2 Resume & Cover Letter Writing</div>
+              <div class="info-section">2.2.1 Study Hall Resume Writing</div>
+              <div class="info-section">2.2.2 Study Hall Cover Letter Writing</div>
+              <div class="sub-name-paragraph">2.3GBS Club "Skills & Experience"</div>
+              <div class="info-section">2.3.1 Experiental Education</div>
+              <div class="info-section">2.3.2 Voluntering</div>
+              <div class="info-section">2.3.3 Paid Employment</div>
+              <div class="sub-name-paragraph">2.4 Mental Health Support</div>
+              <div class="info-section">2.4.1 Study Hall "Reduce Toxic Worry"</div>
+              <div class="info-section">2.4.2 Study Hall "Transform All Your Relationship"</div>
+              <div class="info-section">2.4.3 Study Hall "Zero Motivation"</div>
+              <div class="info-section">2.4.4 Study Hall "Reduce The Psychlogical Impact of Quarantine"</div>
+            </div>
+            
+            <div class="app-section">
+                <div class="name-paragraph">3. Social Lounge</div>
+                <div class="sub-name-paragraph">3.1 Make A Friendship</div>
+                <div class="info-section">3.1.1 Club "International Community"</div>
+                <div class="info-section">3.1.2 Club "Black Lives Matter Community"</div>
+                <div class="info-section">3.1.3 Club"LGBTO Community"</div>
+                <div class="info-section">3.1.4 Club"Local Comunity"</div>
+                <div class="info-section">3.1.5 Club"Health Comunity"</div>
+                <div class="info-section">3.1.6 Club"Vegan Comunity"</div>
+                <div class="sub-name-paragraph">3.2 External Events IN GBC</div>
+                <div class="info-section">3.2.1 Dating Stream "Magnetism"</div>
+                <div class="info-section">3.2.2 Entartaining Events</div>
+            </div>
           </div>
         </div>
     </div>
@@ -26,25 +61,57 @@
 
 
 <style>
+    body{
+        letter-spacing: .6px;
+    }
     .container{
         width: 1140px;
         max-width: 100%;
         margin: 0 auto;
     }
-    .app-section>div{
+    .app-title{
+        width: 300px;
+        margin: 0 auto 60px auto;
+        background-color: #292929;
+        padding: 25px 30px ;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        border-radius: 64px;
+    }
+    .app-main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .app-section div{
         margin-bottom: 20px;
         padding: 10px 15px;
         border-radius: 32px;
         border: solid 1px #000;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 350px;
+        margin-right: auto;
+        flex-wrap: wrap;
     }
     .app-section{
-        width: 33%;
         display: flex;
         flex-direction: column;
     }
     .name-paragraph{
-        background-color: lightblue;
+        background-color: rgb(58, 118, 248);
         color: #ffffff;
+        font-size: 24px;
+    }
+    .sub-name-paragraph{
+        background-color: rgb(220, 220, 220);
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .info-section{
+        margin-left: 40px;
+        font-size: 14px;
     }
 </style>
 <style>
